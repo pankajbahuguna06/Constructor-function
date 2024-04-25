@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    
+     function iPhone3(ASIN, color, display, camera, bluetooth) {
+
+        this.ASIN = ASIN;
+        this.color = color;
+        this.display = display;
+        this.camera = camera;
+        this.bluetooth = bluetooth;
+
+        this.dial = function(){
+            console.log("tring.. tring...")
+        }
+        this.sendMessage = function(){
+            console.log( "Sending message...")
+        }
+        this.cameraClick = function(){
+            console.log("Camera clicked")
+        }
+        this.connectBluetooth= function(){
+            console.log("Bluetooth connected successfully...")
+        }
+
+     }
+
+     let i3 ={}
+      iPhone3.call(i3,"B09X67JBQV", "Gray", 7.8, "2.0 MP", "Bluetooth 5.1")
+     console.log(i3)
+     i3.dial()
+     i3.sendMessage()
+     i3.cameraClick()
+     i3.connectBluetooth()
+</script>
